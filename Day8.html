@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day8-Transition & Hover</title>
+        <style>
+            .body{
+                font-family: 'Franklin Gothic Medium';
+                background-color: rgba(105, 90, 90, 0.616);
+            }
+            .alert{
+                padding:20px;
+                background-color: rgb(240, 187, 14);
+                color: rgb(240, 23, 12);
+                height: 30px;
+                line-height: 30px;
+                font-size: 30px;                   
+            }
+            .closebtn{            
+                margin-left: 38px;
+                color: rgb(239, 9, 9);
+                font-weight: bold;
+                float: right;
+                font-size: 45px;
+                line-height: 30px;
+                cursor: pointer;
+                transition: 4s;                
+            }
+            .closebtn:hover{
+                color: rgb(22, 19, 19);                
+            }
+        </style>
+    </head>
+    <body class="body">
+        <h2>Alert Messages</h2>
+        <h3>Click on the "x" symbol to close the alert message.</h3>
+        <div class="alert">
+            <span class="closebtn & closebtn:hover" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>Danger! Indicates a dangerous or potentially negative action.</strong>
+        </div>
+    </body>
+</html>
