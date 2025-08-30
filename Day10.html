@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Day10-WebDesigning</title>
+        <style>
+            .body{
+                background-image: radial-gradient(rgba(241, 120, 245, 0.56), rgba(255, 166, 0, 0.833));
+                font-size: 18px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                padding: 10%;
+            }
+            .todo{
+                background-color: rgba(248, 248, 255, 0.68);
+                width: 400px;
+                text-align: center;
+                padding: 20px; 
+                border-radius: 10px;  
+                border-color: rgb(206, 160, 145);              
+                box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+                justify-self: center;
+            }
+            .todo input{
+                width: 90%;
+                height: 30px;
+                padding: 12px 15px;
+                background: transparent;
+                border: 2px;
+                border-radius: 5px;
+                border-style: solid;
+                border-color: rgb(206, 160, 145);
+                color: rgb(20, 19, 19);
+                font-size: 18px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .addtaskbtn{
+                width: 99%;
+                height: 50px;
+                padding: 15px 10px;
+                background-color: green;
+                color: rgb(242, 238, 238);
+                border-radius: 5px;
+                cursor: pointer;   
+                border: none;    
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;         
+            }
+            .task {
+                background: #83888d75;
+                padding: 12px;
+                border-radius: 8px;
+                margin-top: 15px;
+                display: flex;
+                justify-content: space-between; 
+                align-items: center;
+            }          
+            .h3{
+                margin: 0;
+                font-weight: normal;
+            }  
+            .buttons {
+                display: flex;
+                gap: 8px;                               
+            }
+            .modifybtn, .deletebtn {
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                padding: 6px 12px;
+                font-family: 'Trebuchet MS', Arial, sans-serif;
+                font-size: 14px;
+                color: white;
+            }
+            .modifybtn { background-color: gray; }
+            .deletebtn { background-color: red; }   
+        </style>
+    </head>
+    <body class="body">
+        <div class="todo">
+            <h1>TO-DO LIST</h1>
+            <input type="text" placeholder="Enter a new task" class="todo input"><br><br>
+            <button class="addtaskbtn">Add Task</button>
+            <div class="task">
+                <h3 class="h3">Team Call</h3>
+                <div class="buttons">
+                <button class="modifybtn">Modifier</button>
+                <button class="deletebtn">Supprimer</button></div>
+           </div>
+        </div>
+    </body>
+</html>
